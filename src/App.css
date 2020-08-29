@@ -2,37 +2,164 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  /* 
+move animation calls here  */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.letters {
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: ". l1 l1 l2 l2 l3 . ." "l4 l4 l5 l5 l5 l6 . ." "l7 l7 l5 l5 l5 l8 l8 ." ". . . l9 l10 l10 . .";
 }
 
-.App-link {
-  color: #61dafb;
+.letter {
+  border: 2px solid black;
+}
+.l1 {
+  grid-area: l1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.l2 {
+  grid-area: l2;
+}
+
+.l3 {
+  grid-area: l3;
+}
+
+.l4 {
+  grid-area: l4;
+}
+
+.l5 {
+  grid-area: l5;
+}
+
+.l6 {
+  grid-area: l6;
+}
+
+.l7 {
+  grid-area: l7;
+}
+
+.l8 {
+  grid-area: l8;
+}
+
+.l9 {
+  grid-area: l9;
+}
+
+.l10 {
+  grid-area: l10;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient (#333, #000);
+}
+.set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.set div {
+  position: absolute;
+  display: block;
+}
+.set div:nth-child(1) {
+  left: 60%;
+  animation: animate 15s linear;
+  visibility: hidden;
+}
+.set div:nth-child(2) {
+  left: 20%;
+  animation: animate 20s linear;
+  visibility: hidden;
+}
+.set div:nth-child(3) {
+  left: 40%;
+  animation: animate 25s linear;
+  visibility: hidden;
+}
+.set div:nth-child(4) {
+  left: 0%;
+  animation: animate 15s linear;
+  visibility: hidden;
+}
+.set div:nth-child(5) {
+  left: 80%;
+  animation: animate 18s linear;
+  visibility: hidden;
+}
+.set div:nth-child(6) {
+  left: 15%;
+  animation: animate 12s linear;
+  visibility: hidden;
+}
+.set div:nth-child(7) {
+  left: 55%;
+  animation: animate 14s linear;
+  visibility: hidden;
+}
+.set div:nth-child(8) {
+  left: 90%;
+  animation: animate 25s linear;
+  visibility: hidden;
+}
+.set div:nth-child(9) {
+  left: 75%;
+  animation: animate 20s linear;
+  visibility: hidden;
+}
+.set div:nth-child(10) {
+  left: 35%;
+  animation: animate 14s linear;
+  visibility: hidden;
+}
+
+@keyframes animate {
+  0% {
+    top: -10%;
+    visibility: hidden;
+    transform: translateX(20px) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    visibility: visible;
   }
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(135deg);
+  }
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+  }
+}
+.set2 {
+  transform: rotateY(180deg);
+  filter: blur(2px);
+}
+.set3 {
+  transform: scale(0.8) rotateX(180deg);
+  filter: blur(4px);
 }
