@@ -69,10 +69,10 @@ section {
 }
 .set {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   top: 0;
-  left: 0;
+  right: 0;
 }
 .set div {
   position: absolute;
@@ -115,18 +115,38 @@ section {
 }
 .set div:nth-child(8) {
   left: 90%;
-  animation: animate 25s linear;
+  animation: hiding 20s linear;
   visibility: hidden;
+  background-color: aqua;
 }
-.set div:nth-child(9) {
-  left: 75%;
-  animation: animate 20s linear;
-  visibility: hidden;
-}
-.set div:nth-child(10) {
-  left: 35%;
-  animation: animate 14s linear;
-  visibility: hidden;
+
+@keyframes hiding {
+  0% {
+    top: -10%;
+    visibility: hidden;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10% {
+    visibility: visible;
+  }
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    /* transform: translateX(20px) rotate(135deg); */
+    visibility: hidden;
+  }
+  80% {
+    /* transform: translateX(-20px) rotate(180deg); */
+  }
+  100% {
+    /* top: 110%; */
+    filter: blur(2px);
+    /* transform: translateX(-30px) rotate(205deg); */
+  }
 }
 
 @keyframes animate {
@@ -151,13 +171,15 @@ section {
     transform: translateX(-20px) rotate(180deg);
   }
   100% {
-    top: 110%;
-    transform: translateX(-20px) rotate(225deg);
+    /* top: 110%; */
+    filter: blur(2px);
+    transform: translateX(-30px) rotate(205deg);
   }
 }
 .set2 {
   transform: rotateY(180deg);
-  filter: blur(2px);
+  /* filter: blur(2px); */
+  /* background-color: palegreen; full screen */
 }
 .set3 {
   transform: scale(0.8) rotateX(180deg);

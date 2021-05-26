@@ -1,6 +1,9 @@
 import React from "react";
+import { Page1, Page2, Page3, Page4 } from "./components/pages";
 import "./App.css";
 
+// font from my portfolio site,
+// typing animation? no like a
 function App() {
   return (
     <div className="App">
@@ -21,170 +24,48 @@ function App() {
         </div>
 
         <div class="set">
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="100px"
-              width="100px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="80px"
-              width="80px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="80px"
-              width="80px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="60px"
-              width="60px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="60px"
-              width="60px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="60px"
-              width="60px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="80px"
-              width="80px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="50px"
-              width="50px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="50px"
-              width="50px"
-            />
-          </div>
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-              height="50px"
-              width="50px"
-            />
-          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
 
           <div class="set set2">
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                height="50px"
-                width="120px"
-              />
-            </div>
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                height="50px"
-                width="120px"
-              />
-            </div>
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                height="50px"
-                width="120px"
-              />
-            </div>
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                height="50px"
-                width="120px"
-              />
-            </div>
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                height="50px"
-                width="120px"
-              />
-            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
 
             <div class="set set3">
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
               <div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1024px-Square_-_black_simple.svg.png"
-                  height="100px"
-                  width="120px"
-                />
+                <Page2 />
               </div>
             </div>
           </div>
